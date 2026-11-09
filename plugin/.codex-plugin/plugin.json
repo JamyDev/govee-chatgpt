@@ -1,0 +1,26 @@
+{
+  "name": "govee-lights-local",
+  "version": "0.1.1",
+  "description": "Private desktop control of your Govee lights, with a safe simulated demo by default.",
+  "author": {
+    "name": "Govee ChatGPT contributors"
+  },
+  "license": "MIT",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "Govee Lights (Local)",
+    "shortDescription": "Control your own Govee lights privately",
+    "longDescription": "Unofficial single-household local MCP integration. Starts with simulated lights until you configure your own Govee key privately on this computer. Never asks for secrets in chat.",
+    "developerName": "Govee ChatGPT contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "List my Govee lights and tell me whether demo mode is active."
+    ]
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

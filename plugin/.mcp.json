@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "govee": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/server/govee-desktop.cjs"
+      ],
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}
